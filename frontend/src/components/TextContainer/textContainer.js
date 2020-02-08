@@ -14,15 +14,11 @@ const TextContainer = ({ users }) => (
         </span>
       </h1>
       <h2>
-        <a href=''>Created By Gunjan Kadu</a>{' '}
+        <a className='name' href='https://github.com/GunjanKadu'>
+          Created By Gunjan Kadu
+        </a>{' '}
         <span role='img' aria-label='emoji'>
           ❤️
-        </span>
-      </h2>
-      <h2>
-        Try it out right now!{' '}
-        <span role='img' aria-label='emoji'>
-          ⬅️
         </span>
       </h2>
     </div>
@@ -33,8 +29,12 @@ const TextContainer = ({ users }) => (
           <h2>
             {users.map(({ name }) => (
               <div key={name} className='activeItem'>
-                {name}
-                <img alt='Online Icon' src={onlineIcon} />
+                <img
+                  alt='Online Icon'
+                  src={onlineIcon}
+                  style={{ padding: '20px' }}
+                />
+                {name.toUpperCase()}
               </div>
             ))}
           </h2>

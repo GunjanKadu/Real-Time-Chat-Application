@@ -26,6 +26,9 @@
   margin-bottom: 0px;
 }
 
+.name:hover {
+  color: rgb(100, 95, 161);
+}
 @media (min-width: 320px) and (max-width: 1200px) {
   .textContainer {
     display: none;
