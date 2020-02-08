@@ -22,7 +22,7 @@ io.on('connection', socket => {
 
     //Admin Message
     socket.emit('message', {
-      user: admin,
+      user: 'admin',
       text: `${user.name},Welcome to the room ${user.room}`
     });
 
